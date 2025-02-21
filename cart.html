@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - TNK Clothing Shop</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav__container">
+            <a href="/">
+                <img src="images/logo.png" alt="TNK" class="nav__logo">
+            </a>
+
+            <ul class="nav__menu">
+                <li><a href="#" class="nav__link">New & Featured</a></li>
+                <li><a href="#" class="nav__link">Men</a></li>
+                <li><a href="#" class="nav__link">Women</a></li>
+                <li><a href="#" class="nav__link">Kids</a></li>
+                <li><a href="#" class="nav__link">Sale</a></li>
+            </ul>
+
+            <div class="nav__tools">
+                <div class="nav__search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="nav__icons">
+                    <a href="auth.html" class="nav__icon"><i class="far fa-user"></i></a>
+                    <a href="help.html" class="nav__icon"><i class="far fa-question-circle"></i></a>
+                    <a href="cart.html" class="nav__icon"><i class="fas fa-shopping-bag"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="cart-container">
+        <h1>Shopping Cart</h1>
+        <div class="cart-grid">
+            <div class="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-summary">
+                <h2>Order Summary</h2>
+                <div class="subtotal">
+                    <span>Subtotal</span>
+                    <span class="amount">$0.00</span>
+                </div>
+                <div class="shipping">
+                    <span>Estimated Shipping</span>
+                    <span class="amount">$0.00</span>
+                </div>
+                <div class="total">
+                    <span>Total</span>
+                    <span class="amount">$0.00</span>
+                </div>
+                <button class="btn btn--primary btn--small">Proceed to Checkout</button>
+                <a href="index.html" class="btn btn--secondary btn--small">Continue Shopping</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- You Might Be Interested In Section -->
+    <section class="interested-in">
+        <div class="section-header">
+            <h2>You Might Be Interested In</h2>
+            <div class="scroll-controls">
+                <button class="scroll-btn prev" aria-label="Previous">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="scroll-btn next" aria-label="Next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        <div class="scroll-container">
+            <div class="trend-list">
+                <a href="product.html?id=1" class="trend-card">
+                    <img src="images/placeholder.png" alt="Image">
+                    <div class="trend-details">
+                        <h3>Placeholder</h3>
+                        <span class="trend-price">$100.00</span>
+                    </div>
+                    <span class="trend-category">Category</span>
+                </a>
+                <a href="product.html?id=2" class="trend-card">
+                    <img src="images/placeholder.png" alt="Image">
+                    <div class="trend-details">
+                        <h3>Placeholder</h3>
+                        <span class="trend-price">$100.00</span>
+                    </div>
+                    <span class="trend-category">Category</span>
+                </a>
+                <a href="product.html?id=3" class="trend-card">
+                    <img src="images/placeholder.png" alt="Image">
+                    <div class="trend-details">
+                        <h3>Placeholder</h3>
+                        <span class="trend-price">$100.00</span>
+                    </div>
+                    <span class="trend-category">Category</span>
+                </a>
+                <a href="product.html?id=4" class="trend-card">
+                    <img src="images/placeholder.png" alt="Image">
+                    <div class="trend-details">
+                        <h3>Placeholder</h3>
+                        <span class="trend-price">$100.00</span>
+                    </div>
+                    <span class="trend-category">Category</span>
+                </a>
+                <a href="product.html?id=5" class="trend-card">
+                    <img src="images/placeholder.png" alt="Image">
+                    <div class="trend-details">
+                        <h3>Placeholder</h3>
+                        <span class="trend-price">$100.00</span>
+                    </div>
+                    <span class="trend-category">Category</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <button class="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
+    
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+:root {
+    /* Base Spacing Unit: 4px */
+    --space-xxs: 4px;
+    --space-xs: 8px;
+    --space-sm: 12px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-xxl: 48px;
+
+    /* Component Specific */
+    --space-header-height: 60px;
+    --space-card-padding: var(--space-lg);
+    --space-section-padding: var(--space-xxl);
+}

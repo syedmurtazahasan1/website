@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help - TNK Clothing Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="help.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav__container">
+            <a href="/">
+                <img src="images/logo.png" alt="TNK" class="nav__logo">
+            </a>
+
+            <ul class="nav__menu">
+                <li><a href="#" class="nav__link">New & Featured</a></li>
+                <li><a href="#" class="nav__link">Men</a></li>
+                <li><a href="#" class="nav__link">Women</a></li>
+                <li><a href="#" class="nav__link">Kids</a></li>
+                <li><a href="#" class="nav__link">Sale</a></li>
+            </ul>
+
+            <div class="nav__tools">
+                <div class="nav__search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="nav__icons">
+                    <a href="auth.html" class="nav__icon"><i class="far fa-user"></i></a>
+                    <a href="help.html" class="nav__icon"><i class="far fa-question-circle"></i></a>
+                    <a href="cart.html" class="nav__icon"><i class="fas fa-shopping-bag"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Quick Help Section -->
+    <section class="quick-help">
+        <h1>How can we help you?</h1>
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="What are you looking for?">
+        </div>
+    </section>
+
+    <!-- Popular Topics -->
+    <section class="help-topics">
+        <h2>Popular Topics</h2>
+        <div class="topics-grid">
+            <a href="#" class="topic-card">
+                <i class="fas fa-truck"></i>
+                <h3>Shipping & Delivery</h3>
+                <p>Track your order and find shipping options</p>
+            </a>
+            <a href="#" class="topic-card">
+                <i class="fas fa-undo"></i>
+                <h3>Returns</h3>
+                <p>Easy returns within 60 days</p>
+            </a>
+            <a href="#" class="topic-card">
+                <i class="fas fa-tag"></i>
+                <h3>Promotions & Discounts</h3>
+                <p>Learn about deals and offers</p>
+            </a>
+            <a href="#" class="topic-card">
+                <i class="fas fa-tshirt"></i>
+                <h3>Products & Orders</h3>
+                <p>Find product details and order info</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <h2>Still Need Help?</h2>
+        <div class="contact-options">
+            <div class="contact-card">
+                <i class="fas fa-comments"></i>
+                <h3>Live Chat</h3>
+                <p>Available 24/7</p>
+                <button class="btn">Start Chat</button>
+            </div>
+            <div class="contact-card">
+                <i class="fas fa-phone"></i>
+                <h3>Call Us</h3>
+                <p>1-800-123-4567</p>
+                <button class="btn">Call Now</button>
+            </div>
+        </div>
+    </section>
+
+    <button class="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

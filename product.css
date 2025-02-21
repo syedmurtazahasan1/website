@@ -1,0 +1,182 @@
+.product-page {
+    padding: 40px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    background: var(--card-bg);
+    padding: 32px;
+    border-radius: 8px;
+}
+
+.product-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.main-image {
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumbnail-list {
+    display: flex;
+    gap: 12px;
+}
+
+.thumbnail-list img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+.thumbnail-list img:hover,
+.thumbnail-list img.active {
+    opacity: 1;
+}
+
+.product-details h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+    color: var(--text-color);
+}
+
+.product-price {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: var(--text-color);
+}
+
+.product-description {
+    margin-bottom: 32px;
+    color: var(--muted-text);
+}
+
+.product-options {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.size-selector,
+.color-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.size-options,
+.color-options {
+    display: flex;
+    gap: 8px;
+}
+
+.size-btn {
+    width: 48px;
+    height: 48px;
+    border: 1px solid var(--border-color);
+    background: var(--card-bg);
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: all 0.2s;
+}
+
+.size-btn:hover,
+.size-btn.selected {
+    background: var(--primary-color);
+    color: var(--inverse-text);
+    border-color: var(--primary-color);
+}
+
+.color-btn {
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    /* Remove background-color from here as it's set inline */
+}
+
+.color-btn[data-color="black"] {
+    background-color: #000000;
+}
+
+.color-btn[data-color="white"] {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0; /* Add border for white button visibility */
+}
+
+.color-btn[data-color="red"] {
+    background-color: #ff4444;
+}
+
+.color-btn[data-color="blue"] {
+    background-color: #4444ff;
+}
+
+.color-btn::after {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    transition: border-color 0.2s;
+}
+
+.color-btn:hover::after,
+.color-btn.selected::after {
+    border-color: var(--text-color);
+}
+
+.add-to-cart {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.add-to-cart-btn {
+    flex: 1;
+}
+
+/* Remove unused favorite button styles */
+.favorite-btn {
+    display: none;
+}
+
+.product-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: var(--muted-text);
+}
+
+.product-meta i {
+    margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+}
+
